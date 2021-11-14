@@ -1,0 +1,3 @@
+[submodule "django-template"]
+	path = django-template
+	url = https://github.com/dieisabel/django-template
