@@ -1,0 +1,17 @@
+# Automatically normalize line endings
+* text=auto
+
+# Set line endings for cmd scripts (Windows)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps text eol=crlf
+
+# Set line endings for shell scripts (Unix)
+*.sh text eol=lf
+*.zsh text eol=lf
+
+# Exclude lock files from diff
+*.lock -diff
+
+# Specify that all assets are binary
+assets/* binary
