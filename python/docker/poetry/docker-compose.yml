@@ -1,0 +1,15 @@
+services:
+  # backend:
+    # container_name: backend
+    build:
+      # context: ../
+      dockerfile: docker/Dockerfile
+      target: dev
+    # command: >
+    #   uvicorn --host 0.0.0.0 --port 8000 --app-dir src/ --reload main:application
+    # ports:
+    #   - "8000:8000"
+    # volumes:
+    #   - "../src/app:/app/src:ro"
+    # env_file:
+    #   - ../config/dev.env
