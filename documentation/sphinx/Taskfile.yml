@@ -1,0 +1,9 @@
+version: "3.11"
+
+env:
+  DOCKER_COMPOSE: docker compose
+
+tasks:
+  serve:
+    cmds:
+      - $DOCKER_COMPOSE -f docker/docker-compose.yml up

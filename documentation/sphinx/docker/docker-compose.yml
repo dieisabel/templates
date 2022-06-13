@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  docs-server:
+    container_name: docs-server
+    build:
+      dockerfile: docker/Dockerfile
+      context: ../
+    command: make serve
+    ports:
+      - "9500:9500"
+    volumes:
+      - ../:/docs
+      # - ../../src:/src
